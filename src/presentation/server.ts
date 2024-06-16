@@ -34,8 +34,8 @@ export class Server {
                 res.sendFile( indexPath );
         })
 
-        this.app.listen(3000,() => {
-            console.log('Server running in port 3000')
+        this.app.listen(this.port,() => {
+            console.log(`Server running in port ${this.port}`)
         })
     }
 }
